@@ -31,7 +31,7 @@ const App = () => {
 
   useEffect(() => {
     async function sendData() {
-      const response = await fetch(
+      await fetch(
         `https://ecommerce-app-a6739-default-rtdb.firebaseio.com/cart${useremail}.json`,
         {
           method: "PUT",
@@ -45,21 +45,21 @@ const App = () => {
       return;
     }
     if (ctx.changed) {
-      console.log("send data running")
       sendData();
     }
+  // eslint-disable-next-line
   }, [products]);
 
   return (
     <>
-      <Mainnav onShow={showCartHandler}></Mainnav>
-      {<Cart onShow={showCart} onHide={hideCartHandler}></Cart>}
+      <Mainnav onShow={showCartHandler} />
+      {<Cart onShow={showCart} onHide={hideCartHandler} />}
       <Switch>
         <Route path="/" exact>
-          <Redirect to="/home"></Redirect>
+          <Redirect to="/home" />
         </Route>
         <Route path="/home" exact>
-          <Home></Home>
+          <Home />
         </Route>
         <Route path="/products" exact>
           {userLoggedIn && <Products></Products>}
@@ -70,14 +70,14 @@ const App = () => {
           <About></About>
         </Route>
         <Route path="/contact">
-          <ContactUs></ContactUs>
+          <ContactUs />
         </Route>
         <Route path="/auth">
-          <Auth></Auth>
+          <Auth />
         </Route>
         {userLoggedIn && (
           <Route path="/products/:prodId">
-            <ProductDetail></ProductDetail>
+            <ProductDetail />
           </Route>
         )}
         <Route path="*">

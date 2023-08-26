@@ -1,5 +1,4 @@
 import { Container, Form, Button, Row, Col } from "react-bootstrap";
-import { useHistory } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 
 const ContactUs = () => {

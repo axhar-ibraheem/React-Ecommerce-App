@@ -22,6 +22,7 @@ const Mainnav = (props) => {
       }
     }
     fetchCartItems();
+  // eslint-disable-next-line
   }, [useremail]);
   return (
     <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
@@ -72,12 +73,10 @@ const Mainnav = (props) => {
             className="ms-4 p-0 px-3 fw-bolder text-dark rounded-pill border-0"
           >
             <div className="position-relative">
-              <i className="bi bi-cart4 fs-4 px-3">
-               
-                </i>
-                <span className="position-absolute top-0 end-0 text-danger">
+              <i className="bi bi-cart4 fs-4 px-3"></i>
+              <span className="position-absolute top-0 end-0 text-danger">
                 {prodQuantity}
-                  </span> 
+              </span>
             </div>
           </Button>
         </div>

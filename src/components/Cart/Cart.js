@@ -26,7 +26,7 @@ const Cart = (props) => {
           </Button>
         </div>
 
-        <Offcanvas.Header className="d-flex justify-content-center  bg-dark text-light rounded-pill mt-4 fw-bolder fs-5 rounded mb-3">
+        <Offcanvas.Header className="d-flex justify-content-center bg-dark text-light rounded-pill mt-4 fw-bolder fs-5 rounded mb-3">
           Your Cart <i className="ps-2 bi bi-cart4 text-warning"></i>
         </Offcanvas.Header>
 
