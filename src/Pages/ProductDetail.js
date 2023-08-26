@@ -114,8 +114,8 @@ const ProductDetail = () => {
   return (
     <section>
       <Container className="mt-5">
-        <Row className="p-5">
-          <Fragment key={item.id}>
+        <Row className="pt-5">
+          <Fragment key ={item.id}>
             <Col md="5">
               <Carousel className="border ">
                 <Carousel.Item>

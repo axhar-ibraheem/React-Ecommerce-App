@@ -30,7 +30,7 @@ const About = () => {
           </div>
         </Col>
         <Col md={6}>
-          <img src={aboutimage} className="d-block w-100" alt="" />
+          <img src={aboutimage} className="d-md-block d-none w-100" alt="" />
         </Col>
       </Row>
     </Container>

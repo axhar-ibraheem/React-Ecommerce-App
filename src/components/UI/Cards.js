@@ -16,13 +16,13 @@ const Cards = (props) => {
 
   return (
     <Col md="4"  className="mb-4">
-      <Card className="mx-auto h-100 border-0 shadow-sm" style={{ maxWidth: "25rem" }}>
+      <Card className="mx-auto h-100 border-0 shadow-lg" style={{ maxWidth: "25rem" }}>
         <Link to={`/products/${props.id}`}>
           <Card.Img variant="top" src={props.image} />
         </Link>
         <Card.Body>
           <Card.Text>
-            Some quick example text to build on the card title.
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, dolor.
           </Card.Text>
           <div className="d-flex justify-content-between align-items-center mb-2">
             <Card.Title className="fw-bold m-0">{props.title}</Card.Title>

@@ -52,14 +52,9 @@ const ContactUs = () => {
             </div>
           )}
         </div>
-        <Col lg="5" className="bg-gradient bg-info px-4 py-4">
+        <Col lg="6" className="bg-gradient bg-info px-4 py-4">
           <div>
-            <h3 className="fw-bold text-light">Contact Information</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem
-              vitae repudiandae consequatur saepe ullam vel, commodi id nostrum
-              fuga sapiente!
-            </p>
+            <h3 className="fw-bold text-light mb-3">Contact Information</h3>
           </div>
           <div className="pb-2">
             <i className="bi bi-envelope-at-fill me-2 text-danger"></i>
@@ -74,7 +69,7 @@ const ContactUs = () => {
             <span>Old Plaza, Palladium Street, New Delhi.</span>
           </div>
         </Col>
-        <Col lg="4" className="py-3 px-4  shadow">
+        <Col lg="6" className="py-3 px-4  shadow">
           <Form onSubmit={onSubmitHandler}>
             <Form.Group className="mb-3" controlId="formBasicUsername">
               <Form.Label className="fw-bold">Name</Form.Label>
